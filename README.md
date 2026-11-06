@@ -1,5 +1,7 @@
 # Gesture Lab
 
+Demo link https://drive.google.com/drive/folders/1nXy-cCVylBNuL2D53gv9VJzf5XImSgI0?usp=sharing
+
 Source code for a local Flask gesture-recognition demo using MobileNetV3-Small, training-only augmentation, Grad-CAM, environment metrics, latency and a controlled stress panel. Model weights and image data are not included in this repository.
 
 **Status:** functional local inference package; the assignment's mandatory Step-Video-T2V / ArtAug experiment is not completed. See `sota/README.txt` for the experiment status and continuation notes. No claim of SOTA superiority is made.
