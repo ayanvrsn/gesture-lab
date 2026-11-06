@@ -1,0 +1,54 @@
+{
+  "original_only": {
+    "best_epoch": 1,
+    "validation_macro_f1": 0.41742286751361163,
+    "test": {
+      "n": 29,
+      "accuracy": 0.5862068965517241,
+      "macro_f1": 0.5753823060324609,
+      "confusion_matrix": [
+        [
+          3,
+          2,
+          5
+        ],
+        [
+          2,
+          7,
+          1
+        ],
+        [
+          2,
+          0,
+          7
+        ]
+      ]
+    }
+  },
+  "augmented": {
+    "best_epoch": 6,
+    "validation_macro_f1": 0.6634920634920635,
+    "test": {
+      "n": 29,
+      "accuracy": 0.5172413793103449,
+      "macro_f1": 0.5276470588235295,
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          7
+        ],
+        [
+          1,
+          6,
+          3
+        ],
+        [
+          3,
+          0,
+          6
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.451s
+
+OK
+PASS: mocked controller start, live result, pause/Grad-CAM, upload. Not a real-browser/webcam test.
+Counter({('train', 'augmented'): 5312, ('train', 'original'): 88, ('validation', 'original'): 29, ('test', 'original'): 29})

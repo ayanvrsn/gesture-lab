@@ -1,0 +1,154 @@
+{
+  "split_mode": "group",
+  "group_kind": "scene",
+  "seed": 42,
+  "splits": {
+    "train": {
+      "n": 58,
+      "class_counts": {
+        "peace": 20,
+        "thumbs_up": 19,
+        "stop": 19
+      },
+      "groups": [
+        "scene03_light_wall",
+        "scene04_laptop"
+      ]
+    },
+    "validation": {
+      "n": 29,
+      "class_counts": {
+        "peace": 10,
+        "thumbs_up": 9,
+        "stop": 10
+      },
+      "groups": [
+        "scene01_outdoor"
+      ]
+    },
+    "test": {
+      "n": 29,
+      "class_counts": {
+        "peace": 10,
+        "thumbs_up": 9,
+        "stop": 10
+      },
+      "groups": [
+        "scene02_kitchen"
+      ]
+    }
+  },
+  "best_parameters": {
+    "C": 1.0,
+    "gamma": "scale"
+  },
+  "validation_macro_f1": 1.0,
+  "test_accuracy": 1.0,
+  "test_macro_f1": 1.0,
+  "classification_report": {
+    "peace": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "thumbs_up": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 9.0
+    },
+    "stop": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 29.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 29.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      0,
+      10
+    ]
+  ],
+  "class_order": [
+    "peace",
+    "thumbs_up",
+    "stop"
+  ],
+  "validation_trials": [
+    {
+      "C": 0.1,
+      "gamma": "scale",
+      "validation_macro_f1": 0.9645191409897292
+    },
+    {
+      "C": 0.1,
+      "gamma": 0.01,
+      "validation_macro_f1": 0.8898550724637682
+    },
+    {
+      "C": 1.0,
+      "gamma": "scale",
+      "validation_macro_f1": 1.0
+    },
+    {
+      "C": 1.0,
+      "gamma": 0.01,
+      "validation_macro_f1": 0.9645191409897292
+    },
+    {
+      "C": 10.0,
+      "gamma": "scale",
+      "validation_macro_f1": 1.0
+    },
+    {
+      "C": 10.0,
+      "gamma": 0.01,
+      "validation_macro_f1": 0.9645191409897292
+    }
+  ],
+  "extraction": {
+    "dataset": "/workspace/scratch/33fbb742538d/hand_gesture_ready/dataset",
+    "feature_version": "pairwise_image_xyz_v1",
+    "created_utc": "2026-10-02T18:40:18.461162+00:00",
+    "total_files": 120,
+    "usable": 116,
+    "status_counts": {
+      "ok": 116,
+      "no_hand": 2,
+      "duplicate": 2
+    },
+    "usable_per_class": {
+      "peace": 40,
+      "thumbs_up": 37,
+      "stop": 39
+    },
+    "note": "Metrics from train apply only to successfully extracted, unique, single-hand photos."
+  },
+  "limitations": "Conditional on detected single hands. Small test set. No verified unknown-gesture rejection. No webcam accuracy claim."
+}

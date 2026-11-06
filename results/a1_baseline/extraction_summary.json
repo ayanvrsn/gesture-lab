@@ -1,0 +1,18 @@
+{
+  "dataset": "/workspace/scratch/33fbb742538d/hand_gesture_ready/dataset",
+  "feature_version": "pairwise_image_xyz_v1",
+  "created_utc": "2026-10-02T18:40:18.461162+00:00",
+  "total_files": 120,
+  "usable": 116,
+  "status_counts": {
+    "ok": 116,
+    "no_hand": 2,
+    "duplicate": 2
+  },
+  "usable_per_class": {
+    "peace": 40,
+    "thumbs_up": 37,
+    "stop": 39
+  },
+  "note": "Metrics from train apply only to successfully extracted, unique, single-hand photos."
+}
